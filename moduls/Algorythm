@@ -1,0 +1,24 @@
+import input_data
+
+
+class Mother(input_data):
+    def __init__(self, known_territory, support_class):
+        self.known_territory = known_territory
+        self.support_class = support_class
+        # self.environment = environment
+
+    def support_low_class(self, support_class):
+        if support_class == "arctic":
+            environment = "arctic"
+
+        elif support_class == "desert":
+            environment = "desert"
+
+        elif support_class == "forest":
+            environment = "forest"
+
+        elif support_class == "mountains":
+            environment = "mountains"
+
+        else:
+            raise EnvironmentError
